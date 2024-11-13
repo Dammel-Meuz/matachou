@@ -1,0 +1,563 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hauteur minimale pour occuper tout l'écran */
+    margin: 0; /* Supprime les marges par défaut du body */
+    padding: 0; /* Supprime les paddings par défaut du body */
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 10px 50px;
+}
+
+#logo-img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.nav-item {
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #549637;
+    border-radius: 80px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #549637;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-collapse {
+    padding-top: 5px;
+}
+
+#commandez {
+    padding-top: 40px;
+    width: 1150px;
+}
+
+/* Conteneur principal */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section principale */
+.main-content, .square-container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+/* Conteneur d'image */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images principales */
+.main-content img, .square-container2 img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #549637;
+    border-radius: 15px;
+}
+
+/* Texte principal */
+.text {
+    flex: 2;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 20px;
+    text-align: left;
+}
+
+/* Texte des fruits */
+.text-container {
+    flex: 2;
+    margin-left: 20px;
+}
+
+/* Liste des fruits */
+.liste {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px; /* Espacement entre les colonnes et les lignes */
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #333;
+    list-style-type: none;
+    text-align: left;
+}
+
+.liste li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.liste li::before {
+    content: '•';
+    color: #549637;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Bouton de commande */
+#commandez {
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 15px;
+    border: none;
+}
+
+.plateaux {
+    margin-top: 100px;
+    background-color: #549637;
+    height: 470px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-prix {
+    display: grid;
+    grid-template-rows: auto auto ; /* Deux lignes pour chaque paire d'image et de prix */
+    gap: 10px;
+    align-items: center; /* Aligner verticalement */
+}
+
+.price {
+    width: 330px; /* Largeur du carré */
+    height: 250px; /* Hauteur du carré */
+    border: none;
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Cacher le contenu débordant */
+    background-color: #fff;
+    justify-self: center; /* Centrer horizontalement */
+}
+
+.prix {
+    width: 200px; /* Largeur du carré */
+    height: 40px; /* Hauteur du carré */
+    border: none;
+    border-radius: 20px; /* Coins arrondis */
+    overflow: hidden; /* Cacher le contenu débordant */
+    background-color: #fff;
+    text-align: center;
+    font-size: 25px;
+    justify-self: center; /* Centrer horizontalement */
+    align-self: start; /* Aligner le prix vers le haut */
+}
+
+.prix1, .prix2, .prix3 {
+    display: grid;
+    justify-items: center; /* Centrer horizontalement */
+}
+
+.fruit {
+    height: auto;
+    max-width: 350px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 60%;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel img {
+    width: calc(100% / 3);
+}
+.carousel-button {
+    width: 50px;
+    height: 50px;
+    background-color: #549637;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.bienfaits-container {
+    display: flex;
+    flex-direction: row-reverse; /* Pour placer l'image à droite */
+    align-items: flex-start; /* Aligne le contenu au début verticalement */
+    margin: 30px 50px; /* Ajuste l'espace autour du contenu */
+    gap: 20px; /* Espace entre l'image et le texte */
+    margin-top: 50px;
+}
+
+.bienfaits {
+    flex: 1;
+    font-size: 19px;
+    background-color: #549637;
+    color: white;
+    padding: 20px; /* Ajoute du padding pour un meilleur espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+#liste_fruits {
+    max-width: 50%; /* Ajuste la largeur de l'image */
+    height: 720px;
+    border: none;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+h1 {
+    color: #549637;
+    text-align: center;
+}
+
+h2 {
+    color: #549637;
+    text-align: center;
+}
+
+#contact {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    color: #549637;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact .contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    color: #549637;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact .contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+}
+
+#contact .contact-info p i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #549637;
+}
+
+#contact a, #contact span {
+    color: #549637;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #549637;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#a-propos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "p1 p1"
+        "p2 p3"
+        "p4 p5"
+        "p6 p6";
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.grid-item-vert {
+    padding: 20px;
+    background-color: #549637;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#p1 {
+    grid-area: p1;
+    text-align: center;
+}
+
+#p2 {
+    grid-area: p2;
+    color: white;
+}
+
+#p3 {
+    grid-area: p3;
+    color: white;
+}
+
+#p4 {
+    grid-area: p4;
+    color: white;
+}
+
+#p5 {
+    grid-area: p5;
+    color: white;
+}
+
+#p6 {
+    grid-area: p6;
+    text-align: center;
+}
+
+.h2 {
+    color: white;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Masquer le bouton au début */
+}
+
+#scrollTopBtn:hover {
+    background-color: #3e722a;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        color: #549637;
+        margin: 40px auto;
+        width: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    #contact .contact-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #contact .contact-info p {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #contact .contact-info p i {
+        font-size: 24px;
+        margin-right: 15px;
+        color: #549637;
+    }
+
+    #contact a, #contact span {
+        color: #549637;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    #a-propos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #a-propos > .grid-item {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    #a-propos > .grid-item-vert {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between items */
+    }
+    .bienfaits-container {
+        flex-direction: column; /* Place the text above the image */
+        align-items: center; /* Center align items */
+    }
+
+    .bienfaits {
+        width: 100%;
+       margin-bottom: 20px; /* Add space between the text and the image */
+    }
+
+    #liste_fruits {
+        max-width: 100%; /* Adjust the image width */
+        height: auto; /* Adjust the height automatically */
+    }
+    .plateaux {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 70%; /* Réduire la largeur à 90% de la largeur de l'écran */
+        margin: auto; /* Centrer horizontalement */
+        overflow-x: hidden; /* Cacher le débordement horizontal */
+        }
+
+    .image-prix {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .price {
+        width: 60%; /* Largeur maximale pour s'adapter à l'écran */
+        height: auto; /* Hauteur automatique */
+        max-height: 150px; /* Hauteur maximale des images */
+    }
+
+    .prix {
+        width: 90%; /* Largeur totale */
+        height: auto; /* Hauteur automatique */
+        font-size: 16px; /* Taille de police réduite */
+    }
+    .main-content, .square-container2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .main-content img, .square-container2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text, .text-container {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .liste {
+        grid-template-columns: 1fr;
+        gap: 10px 0; /* Espacement entre les lignes seulement */
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+}
+
